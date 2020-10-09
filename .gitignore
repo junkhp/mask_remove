@@ -1,0 +1,5 @@
+/checkpoints/
+/datasets/
+/output/
+__pycache__/
+*.DS_Store
