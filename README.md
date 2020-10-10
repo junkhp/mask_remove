@@ -1,11 +1,19 @@
 # マスク除去
 
 ## codes
+ローカル
+```
+/disk018/share/oshiba/hackathon/codes/
+```
 - ソースコード
 <br>
 <br>
 
-## データセット
+## datasets
+ローカル
+```
+/disk018/share/oshiba/hackathon/datasets/
+```
 ### ffhq_base
 - 人の顔画像のデータセット(70000枚)
 ### ffhq_landmarks
@@ -20,9 +28,17 @@
 <br>
 
 ## checkpoints
+ローカル
+```
+/disk018/share/oshiba/hackathon/datasets/
+```
 - 学習済みモデル
 <br>
 <br>
 
 ## output
+ローカル
+```
+/disk018/share/oshiba/hackathon/datasets/
+```
 - テスト結果
