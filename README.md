@@ -1,5 +1,5 @@
 # マスク除去
-![生成例](https://github.com/junkhp/mask_remove//images/sample.png)
+![生成例](https://github.com/junkhp/mask_remove/blob/main/images/sample.png)
 deep learningを用いてマスクをはずす
 
 ## codes
