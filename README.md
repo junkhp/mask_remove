@@ -1,4 +1,6 @@
 # マスク除去
+![](https://github.com/junkhp/mask_remove/blob/master/images/sample.png)
+deep learningを用いてマスクをはずす
 
 ## codes
 ローカル
