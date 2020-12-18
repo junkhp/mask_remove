@@ -2,7 +2,8 @@
 ## 概要
 人の顔画像のデータセットから擬似マスクデータセットを作成し，入力：疑似マスク画像，正解：もともとの顔画像として，Pix2Pixを学習し，マスク除去AIを作成．
 
-サービス本体のリポジトリ → https://github.com/pepepor123/hackathon-imp\
+サービス本体のリポジトリ → https://github.com/pepepor123/hackathon-imp
+
 デモ動画 → https://www.youtube.com/watch?v=oXvH-DxO5X8&feature=youtu.be
 
 ## 疑似マスク画像の生成方法
