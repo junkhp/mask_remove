@@ -1,46 +1,22 @@
-# マスク除去
-![生成例](https://github.com/junkhp/mask_remove/blob/main/images/sample.png)
-deep learningを用いてマスクをはずす
+# マスク除去AIwebアプリのマスク除去AIの部分
+## 概要
+人の顔画像のデータセットから擬似マスクデータセットを作成し，入力：疑似マスク画像，正解：もともとの顔画像として，Pix2Pixを学習し，マスク除去AIを作成．
 
-## codes
-ローカル
-```
-/disk018/share/oshiba/hackathon/codes/
-```
-- ソースコード
-<br>
-<br>
+サービス本体のリポジトリ → https://github.com/pepepor123/hackathon-imp\
+デモ動画 → https://www.youtube.com/watch?v=oXvH-DxO5X8&feature=youtu.be
 
-## datasets
-ローカル
-```
-/disk018/share/oshiba/hackathon/datasets/
-```
-### ffhq_base
-- 人の顔画像のデータセット(70000枚)
-### ffhq_landmarks
-- ffhq_baseから得られた顔画像のランドマーク
-### ffhq_masked_512
-- ffhq_baseに疑似マスクをつけた画像
-- 画像サイズ 512x512
-### hirabayashi
-- 平林のマスク顔のデータセット
+## 疑似マスク画像の生成方法
+![](codes/make_dataset/test_images/masked_image2.png "疑似マスク画像")
 
-<br>
-<br>
+疑似マスク画像
 
-## checkpoints
-ローカル
-```
-/disk018/share/oshiba/hackathon/datasets/
-```
-- 学習済みモデル
-<br>
-<br>
+1. 顔のランドマークを取得(dlibを使用)
+2. 下の画像で青丸が大きくなっている点を参考に顎の輪郭に沿って白く塗りつぶし
 
-## output
-ローカル
-```
-/disk018/share/oshiba/hackathon/datasets/
-```
-- テスト結果
+
+![](codes/make_dataset/test_images/out3.png "疑似マスク画像")
+
+## 生成例(左が生成画像で右が正解画像)
+![](results/05492_combined-outputs.png "疑似マスク画像")![](results/05492_combined-targets.png "疑似マスク画像")
+
+![](results/05207_combined-outputs.png "疑似マスク画像")![](results/05207_combined-targets.png "疑似マスク画像")
